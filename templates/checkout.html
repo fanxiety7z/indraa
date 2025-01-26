@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>ES Pisang Ijo JMBD</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+  <!-- slick slider stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- font awesome style -->
+  <link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="../static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+
+  <div class="main_body_content">
+
+    <div class="hero_area">
+      <!-- header section starts -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">ES Pisang Ijo JMBD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about"> Tentang</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/chocolate">Pisang Ijo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/checkout">Checkout</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Kontak Kami</a>
+                </li>
+              </ul>
+              <div class="quote_btn-container">
+                <form class="form-inline">
+                  <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+                <a href="">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header">
+      <div class="container">
+        <h1 class="display-3 mb-3">Checkout</h1>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Checkout Page -->
+    <div class="container py-5">
+      <h1 class="text-center mb-5">Checkout</h1>
+      <div class="row">
+        <!-- Product Selection -->
+        <div class="col-lg-6 mb-4">
+          <h4>Daftar Produk</h4>
+          <ul class="list-group mb-4">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Es Pisang Ijo Klasik
+              <button class="btn btn-sm btn-primary add-to-cart" data-name="Es Pisang Ijo Klasik" data-price="50000">Tambah</button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Es Pisang Ijo Coklat
+              <button class="btn btn-sm btn-primary add-to-cart" data-name="Es Pisang Ijo Coklat" data-price="55000">Tambah</button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Es Pisang Ijo Durian
+              <button class="btn btn-sm btn-primary add-to-cart" data-name="Es Pisang Ijo Durian" data-price="60000">Tambah</button>
+            </li>
+          </ul>
+
+          <h4>Ringkasan Pesanan</h4>
+          <ul class="list-group mb-4" id="order-summary">
+            <!-- Order items will be appended here -->
+          </ul>
+          <p class="text-end fw-bold" id="total-price">Total: Rp0</p>
+        </div>
+
+        <!-- Customer Information -->
+        <div class="col-lg-6">
+          <h4>Informasi Pelanggan</h4>
+          <form id="checkoutForm">
+            <div class="mb-3">
+              <label for="customerName" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="customerName" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="customerEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerAddress" class="form-label">Alamat Pengiriman</label>
+              <textarea class="form-control" id="customerAddress" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="paymentMethod" class="form-label">Metode Pembayaran</label>
+              <select class="form-select" id="paymentMethod" required>
+                <option value="">Pilih Metode</option>
+                <option value="transfer">Transfer Bank</option>
+                <option value="cod">Bayar di Tempat (COD)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Konfirmasi Pesanan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const cart = [];
+      const orderSummary = document.getElementById('order-summary');
+      const totalPriceElement = document.getElementById('total-price');
+  
+      // Menambah produk ke dalam keranjang belanja
+      document.querySelectorAll('.add-to-cart').forEach(button => {
+          button.addEventListener('click', function () {
+              const name = this.getAttribute('data-name');
+              const price = parseInt(this.getAttribute('data-price'));
+  
+              cart.push({ name, price });
+              updateOrderSummary();
+          });
+      });
+  
+      // Update tampilan ringkasan pesanan
+      function updateOrderSummary() {
+          orderSummary.innerHTML = '';
+          let total = 0;
+  
+          cart.forEach(item => {
+              const li = document.createElement('li');
+              li.className = 'list-group-item d-flex justify-content-between align-items-center';
+              li.innerHTML = `${item.name} <span>Rp${item.price.toLocaleString()}</span>`;
+              orderSummary.appendChild(li);
+              total += item.price;
+          });
+  
+          totalPriceElement.textContent = `Total: Rp${total.toLocaleString()}`;
+      }
+  
+      // Menampilkan stok produk dari API
+      fetch('/stok')
+          .then(response => response.json())
+          .then(data => {
+              const stockTableBody = document.querySelector('#stock-table tbody');
+              data.forEach(product => {
+                  const row = `
+                    <tr>
+                      <td>${product["Nama Produk"]}</td>
+                      <td>Rp${parseInt(product["Harga"]).toLocaleString()}</td>
+                      <td>${product["Stok Tersedia"]}</td>
+                    </tr>
+                  `;
+                  stockTableBody.innerHTML += row;
+              });
+          })
+          .catch(error => console.error('Error fetching stock data:', error));
+  
+      // Menampilkan laporan penjualan dari API
+      fetch('/laporan_penjualan')
+          .then(response => response.json())
+          .then(data => {
+              const salesTableBody = document.querySelector('#sales-table tbody');
+              data.forEach(sale => {
+                  const row = `
+                    <tr>
+                      <td>${sale["Nama Produk"]}</td>
+                      <td>Rp${parseInt(sale["Harga"]).toLocaleString()}</td>
+                      <td>${sale["Nama Pelanggan"]}</td>
+                      <td>${sale["Email"]}</td>
+                      <td>${sale["Alamat"]}</td>
+                      <td>${sale["Metode Pembayaran"]}</td>
+                    </tr>
+                  `;
+                  salesTableBody.innerHTML += row;
+              });
+          })
+          .catch(error => console.error('Error fetching sales data:', error));
+  
+      // Menangani proses submit form checkout
+      document.getElementById('checkoutForm').addEventListener('submit', async function (e) {
+          e.preventDefault();
+  
+          const name = document.getElementById('customerName').value;
+          const email = document.getElementById('customerEmail').value;
+          const address = document.getElementById('customerAddress').value;
+          const paymentMethod = document.getElementById('paymentMethod').value;
+  
+          if (cart.length === 0) {
+              alert('Keranjang belanja kosong! Tambahkan produk terlebih dahulu.');
+              return;
+          }
+  
+          if (name && email && address && paymentMethod) {
+              // Data yang akan dikirim ke server
+              const data = {
+                  cart,
+                  customer_info: {
+                      name,
+                      email,
+                      address,
+                      payment_method: paymentMethod,
+                  },
+              };
+  
+              try {
+                  // Kirim data ke server menggunakan fetch
+                  const response = await fetch('/submit_checkout', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(data),
+                  });
+  
+                  const result = await response.json();
+                  if (response.ok) {
+                      alert(result.message);
+                  } else {
+                      alert(`Gagal menyimpan pesanan: ${result.error}`);
+                  }
+              } catch (err) {
+                  console.error(err);
+                  alert('Terjadi kesalahan saat menyimpan pesanan.');
+              }
+          } else {
+              alert('Harap isi semua data dengan benar.');
+          }
+      });
+  </script>
+  
+
+
+    
+
+    <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row info_form_social_row">
+          <div class="col-md-8 col-lg-9">
+            <div class="info_form">
+              <form action="">
+                <input type="email" placeholder="Masukkan email Anda">
+                <button>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row info_main_row">
+          <div class="col-md-6 col-lg-3">
+            <div class="info_links">
+              <h4>Menu</h4>
+              <div class="info_links_menu">
+                <a href="/">Beranda</a>
+                <a href="/about">Tentang Kami</a>
+                <a href="/chocolate">Pisang Ijo</a>
+                <a href="/testimonial">Testimoni</a>
+                <a href="/contact">Kontak Kami</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_insta">
+              <h4>Instagram</h4>
+              <div class="insta_box">
+                <div class="img-box">
+                  <img src="../static/images/insta-img.png" alt="">
+                </div>
+                <p>Foto produk Pisang Ijo terbaru</p>
+              </div>
+              <div class="insta_box">
+                <div class="img-box">
+                  <img src="../static/images/insta-img.png" alt="">
+                </div>
+                <p>Nikmati rasa Pisang Ijo yang unik!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_detail">
+              <h4>Perusahaan</h4>
+              <p class="mb-0">
+                Kami menyajikan Pisang Ijo dengan rasa yang autentik dan kualitas terbaik. Kami berkomitmen untuk memberikan pengalaman kuliner yang tak terlupakan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h4>Hubungi Kami</h4>
+            <div class="info_contact">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Lokasi</span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>Telepon +01 1234567890</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope"></i>
+                <span>espisangijojmbd@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="container-fluid footer_section">
+      <div class="container">
+        <div class="col-md-11 col-lg-8 mx-auto">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a href="https://html.design/">HANGKER EPEP</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+
+</body>
+
+</html>
